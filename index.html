@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #f2f2f2; -webkit-text-stroke: #f2f2f2; background-color: #1d1d1d}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;&lt;title&gt;Loading...&lt;/title&gt;&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>fetch("https://functions.pabbly.com/api/orgs/69c62d3491a29653da9a74ff/functions/6a9fc6e40ba62c6deb6f54a8/invoke", {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>method: "POST",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>headers: { "Content-Type": "application/json" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body: JSON.stringify({})</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.then(r =&gt; r.json())</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.then(data =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const output = data?.step_results?.at(-1)?.output || '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const match = output.match(/COUNT:\s*(\d+)/);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const count = match ? match[1] : 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>window.location.href = "https://noeffsgiven.fillout.com/t/2muPgFJFiCus?count=" + count;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Loading form, please wait...&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
